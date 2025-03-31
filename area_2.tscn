@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=4 uid="uid://dedau3u1lkhpc"]
+[gd_scene load_steps=9 format=4 uid="uid://dedau3u1lkhpc"]
 
 [ext_resource type="Texture2D" uid="uid://crgeoeqggncjr" path="res://brackeys_platformer_assets/sprites/world_tileset.png" id="1_oqm5g"]
+[ext_resource type="Texture2D" uid="uid://dof3nk4s1gbxw" path="res://City_Clean/Jungle/Desert/3.Mountains.png" id="1_plvk5"]
 [ext_resource type="Texture2D" uid="uid://bimgnirgtxrqd" path="res://brackeys_platformer_assets/small_metal_spike_02.png" id="2_qq7dv"]
+[ext_resource type="Texture2D" uid="uid://ct7xlr5533wrl" path="res://City_Clean/Jungle/Desert/2.Clouds.png" id="2_xlk17"]
 [ext_resource type="PackedScene" uid="uid://b44bdr1lnyqvm" path="res://slime.tscn" id="3_cq27n"]
 [ext_resource type="PackedScene" uid="uid://cwmnns1cb0wx3" path="res://coin.tscn" id="4_qafa7"]
 
@@ -140,6 +142,22 @@ texture = ExtResource("1_oqm5g")
 sources/0 = SubResource("TileSetAtlasSource_2ihcg")
 
 [node name="area 2" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_top = -45.0
+offset_right = 1959.0
+offset_bottom = 595.0
+color = Color(0.760784, 0.698039, 0.501961, 1)
+
+[node name="3_mountains" type="Sprite2D" parent="."]
+position = Vector2(978, 135)
+scale = Vector2(6.11875, 3.24444)
+texture = ExtResource("1_plvk5")
+
+[node name="2_clouds" type="Sprite2D" parent="."]
+position = Vector2(966, 84)
+scale = Vector2(6.025, 1.48889)
+texture = ExtResource("2_xlk17")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(24, 41)

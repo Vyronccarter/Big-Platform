@@ -13,6 +13,7 @@ config_version=5
 config/name="Big platformer"
 config/features=PackedStringArray("4.3", "Forward Plus")
 
-[editor_plugins]
+[display]
 
-enabled=PackedStringArray("res://addons/imjp94.yafsm/plugin.cfg")
+window/size/viewport_width=1024
+window/size/viewport_height=600
